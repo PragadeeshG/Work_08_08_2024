@@ -1,0 +1,15 @@
+create table if not exists cloud_migration_inclusion_line_items(
+line_item_code Integer not null,
+cloud_migration_inclusion_ref varchar(255) null,
+exclusion_valid char null,
+accompanied_rule_content_code Integer null,
+accompanied_rule_content varchar(255) null,
+metadata varchar(255) null,
+key_identifier Integer null,
+secret_code Integer null,
+hashicorp_onboarded varchar(255) null,
+secret_store_for_certificates Integer null,
+key_roation_schedule varchar(255) null,
+status varchar(255) null,
+remarks varchar(255) null,
+constraint cloud_migration_inclusion_line_items_pk primary key(line_item_code));
